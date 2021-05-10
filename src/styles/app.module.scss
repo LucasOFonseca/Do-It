@@ -1,0 +1,9 @@
+.wrapper {
+    display: flex;
+
+    main {
+        flex: 1;
+
+        width: calc(100vw - 12rem);
+    }
+}

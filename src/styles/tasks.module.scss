@@ -1,0 +1,255 @@
+.tasksPage {
+    overflow-y: scroll;
+
+    width: calc(100vw - 12rem);
+    height: 100vh;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        width: 36.4375rem;
+        height: min-content;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-top: 6.1875rem;
+
+        .searchBar {
+            display: flex;
+
+            width: 100%;
+            height: 3.25rem;
+
+            background: rgba(0, 0, 0, 0.1);
+
+            border-radius: 0.625rem;
+
+            button {            
+                width: 3.25rem;
+                height: 3.25rem;
+
+                background: none;
+
+                border-top-left-radius: 0.625rem;
+                border-bottom-left-radius: 0.625rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                img {
+                    width: 1.3125rem;
+                    height: 1.3125rem;
+                }
+            }
+            
+            input {
+                width: 33.25rem;
+                height: 100%;
+
+                background: none;
+
+                border-top-right-radius: 0.625rem;
+                border-bottom-right-radius: 0.625rem;
+
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.125rem;
+                font-weight: 300;
+            }
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+
+            margin-top: 2.4375rem;     
+        }
+
+        .tasks {
+            margin-top: 1.6875rem;
+            margin-bottom: 1rem;
+
+            list-style: none;
+
+            .task {
+                display: flex;
+                flex-wrap: wrap;
+
+                width: 100%;
+                height: 9.195rem;
+
+                background: #0047FF;
+
+                border-radius: 0.625rem;
+
+                margin-bottom: 1.3125rem;
+
+                .menuButton {
+                    display: flex;
+                    align-items: center;
+
+                    width: 1.125rem;
+                    height: 1.125rem;
+
+                    background: none;
+
+                    margin-top: 1.125rem;
+                    margin-right: 1.6875rem;
+
+                    img {
+                        width: 1rem;
+                        height: 1rem;
+
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    &:hover {   
+                        cursor: pointer;
+                    }
+                }
+
+                .taskInfo {
+                    width: 32rem;
+
+                    margin-top: 1.125rem;
+                    margin-left: 1.5rem;
+
+                    h2 {
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 700;
+
+                        color: #FFF;
+                    }
+
+                    p {
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 1.125rem;
+                        font-weight: 400;
+
+                        color: #FFF;
+
+                        white-space: nowrap;
+                        overflow: hidden;
+                        
+                        text-overflow: ellipsis;
+                    }
+                }
+
+                .progress {
+                    display: flex;
+                    align-items: center;
+
+                    width: 6.5rem;
+                    height: 2rem;
+
+                    margin-top: 0.625rem;
+                    margin-left: 1.5rem;
+
+                    border-radius: 0.3125rem;
+
+                    background: #FFF;
+
+
+                    p {
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 0.875rem;
+                        font-weight: 500;
+
+                        margin-left: 0.4375rem;
+                    }
+
+                    span {
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            width: 1rem;
+                            height: 1rem;
+
+                            margin-left: 0.4375rem;
+                            margin-right: 0.25rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .createTask {
+            display: flex;
+            align-items: center;
+            
+            width: 9.75rem;
+            height: 59px;
+
+            background: #0047FF;
+
+            border-radius: 0.625rem;
+
+            margin-left: auto;
+            margin-bottom: 2rem;
+
+            transition: background 0.2s;
+
+            img {
+                width: 0.875rem;
+                height: 0.875rem;
+
+                margin-left: 1.25rem;
+            }
+
+            p {
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.125rem;
+                font-weight: 500;
+
+                color: #FFF;
+
+                margin-left: 0.8125rem;
+            }
+
+            &:hover {
+                background: #0039CC;
+
+                cursor: pointer;
+            }
+        }
+    }
+
+    .createTaskScreen {
+        position: absolute;
+
+        width: calc(100vw - 12rem);
+        height: 100vh;
+
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(4px);
+
+        .formDiv {
+            display: flex;
+            flex-wrap: wrap;
+
+            width: 19.6875rem;
+            height: 18.375rem;
+
+            background: #FFF;
+
+            margin-top: calc(50vh - 9.84375rem);
+            margin-left: auto;
+            margin-right: auto;
+
+            border-radius: 0.625rem;
+
+            h2 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.125rem;
+                font-weight: 600;
+
+                margin-top: 1.5625rem;
+                margin-left: 1.5625rem;
+            }
+        }
+    }
+}
