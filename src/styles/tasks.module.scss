@@ -217,39 +217,4 @@
             }
         }
     }
-
-    .createTaskScreen {
-        position: absolute;
-
-        width: calc(100vw - 12rem);
-        height: 100vh;
-
-        background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(4px);
-
-        .formDiv {
-            display: flex;
-            flex-wrap: wrap;
-
-            width: 19.6875rem;
-            height: 18.375rem;
-
-            background: #FFF;
-
-            margin-top: calc(50vh - 9.84375rem);
-            margin-left: auto;
-            margin-right: auto;
-
-            border-radius: 0.625rem;
-
-            h2 {
-                font-family: 'Montserrat', sans-serif;
-                font-size: 1.125rem;
-                font-weight: 600;
-
-                margin-top: 1.5625rem;
-                margin-left: 1.5625rem;
-            }
-        }
-    }
 }
