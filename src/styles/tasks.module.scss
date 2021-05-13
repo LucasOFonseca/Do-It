@@ -26,41 +26,26 @@
         
             border-radius: 0.625rem;
 
-            form {
-                display: flex;
+            img {            
+                width: 1.3125rem;
+                height: 1.3125rem;
+        
+                padding: 0.9375rem 0.75rem 1rem 1.125rem;
 
-                button {            
-                    width: 3.25rem;
-                    height: 3.25rem;
+            }
             
-                    background: none;
-            
-                    border-top-left-radius: 0.625rem;
-                    border-bottom-left-radius: 0.625rem;
-            
-                    &:hover {
-                        cursor: pointer;
-                    }
-            
-                    img {
-                        width: 1.3125rem;
-                        height: 1.3125rem;
-                    }
-                }
-                
-                input {
-                    width: 33.25rem;
-                    height: 100%;
-            
-                    background: none;
-            
-                    border-top-right-radius: 0.625rem;
-                    border-bottom-right-radius: 0.625rem;
-            
-                    font-family: 'Roboto', sans-serif;
-                    font-size: 1.125rem;
-                    font-weight: 300;
-                }
+            input {
+                width: 33.25rem;
+                height: 100%;
+        
+                background: none;
+        
+                border-top-right-radius: 0.625rem;
+                border-bottom-right-radius: 0.625rem;
+        
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.125rem;
+                font-weight: 300;
             }
         }
         
