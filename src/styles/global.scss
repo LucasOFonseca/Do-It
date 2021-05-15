@@ -23,3 +23,27 @@ h1 {
 h2 {
     font-size: 1.125rem;
 }
+
+@media (max-width: 820px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 730px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media (max-width: 295px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 260px) {
+    html {
+        font-size: 70%;
+    }
+}
