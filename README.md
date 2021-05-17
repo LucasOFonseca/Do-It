@@ -1,46 +1,69 @@
-# Getting Started with Create React App
+<h1 align="center">
+  <img alt="Do It" title="Do It" src=".github/app-logo.png" width="220px" />
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="Do It preview" src=".github/doIt-banner.png" width="100%">
+</p>
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+Do It is a to-do list app where you can add tasks that you need remember later.
+
+## Features
+<strong>In this app, you can:</strong>
+
+- Add tasks
+- Edit any task
+- Delete tasks
+- Search tasks
+- Toggle task situation to "in progress" or "completed"
+
+## Resposive layout
+<p align="center">
+  <img alt="Do It mobile" src=".github/doIt-mobile.png" width="25%">
+</p>
+
+This project is fully compatible with mobile devices of any size.
+
+## Change
+
+The "Add task" button has been moved from the end of the task list to the bottom right corner in floating format to facilitate the creation of new tasks when the user has a very large list of tasks.
+
+## Technologies
+This project was devolved with the following technologies:
+
+- HTML
+- SCSS
+- JavaScript
+- ReactJS
+
+## Challenge difficulties
+
+- At the beginning of development, make the communication between the aplication and the API.
+
+- Send the task data to the edit screen with context API, because the  <em>task element</em> cannot access it.
+
+- Handle API response status.
+
+- Make the search bar work well.
+
+## How to run
+
+In the project directory, run:
 
 ### `yarn start`
 
-Runs the app in the development mode.\
+This command runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## References
 
-### `yarn test`
+- [project layout](https://www.figma.com/file/XJkX024TgPHlzfK0de4Yj1/Lista-de-Tarefas?node-id=23%3A52) (you need to have [Figma](https://www.figma.com) account to access it)
+- [API consumed](https://chronos.compraqui.app/swagger/index.html)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<strong>This project was developed for the WLS Soluções ReactJS developer internship challenge.</strong>\
+\
+By [Lucas Fonseca](https://github.com/LucasOFonseca)
