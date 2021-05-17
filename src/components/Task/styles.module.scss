@@ -1,0 +1,190 @@
+.task {
+    display: flex;
+    flex-wrap: wrap;
+
+    z-index: 1;
+
+    width: 100%;
+    height: 9.195rem;
+
+    background: #0047FF;
+
+    border-radius: 0.625rem;
+
+    margin-bottom: 1.3125rem;
+
+    .menuDiv {
+        position: absolute;
+        right: 0;
+        
+        .menuButton {
+            display: flex;
+            align-items: center;
+    
+            width: 1.125rem;
+            height: 1.125rem;
+    
+            background: none;
+    
+            margin-top: 1.125rem;
+            margin-left: auto;
+            margin-right: 1.6875rem;
+    
+            img {
+                width: 1rem;
+                height: 1rem;
+    
+                margin-left: auto;
+                margin-right: auto;
+            }
+    
+            &:hover {   
+                cursor: pointer;
+            }
+        }
+
+        .taskMenu {
+            display: flex;
+            flex-wrap: wrap;
+    
+            position: absolute;
+            top: 0.75rem;
+            right: 3rem;
+        
+            width: 8.875rem;
+            height: 4.3125rem;
+        
+            background: #FFF;
+    
+            border-radius: 0.25rem;
+    
+            margin-left: auto;
+    
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+        
+            button {
+                display: flex;
+                align-items: center;
+    
+                width: 100%;
+    
+                background: none;
+    
+                transition: filter 0.2s;
+    
+                &:hover {
+                    filter: opacity(0.75);
+    
+                    cursor: pointer;
+                }
+    
+                img {
+                    width: 0.75rem;
+                    height: 0.75rem;
+    
+                    opacity: 0.4;
+    
+                    margin-left: 0.5rem;
+                    margin-right: 0.3125rem;
+                }
+    
+                p {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 0.875rem;
+                    font-weight: 500;
+    
+                    color: rgba(0, 0, 0, 0.4);
+                }
+            }
+        }
+    }
+
+    .taskInfo {
+        width: 32rem;
+
+        margin-top: 1.125rem;
+        margin-left: 1.5rem;
+        margin-bottom: 0.4375rem;
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+
+            color: #FFF;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 400;
+
+            color: #FFF;
+
+            white-space: nowrap;
+            overflow: hidden;
+            
+            text-overflow: ellipsis;
+        }
+    }
+
+    .progress {
+        display: flex;
+        align-items: center;
+
+        width: 6.5rem;
+        height: 2rem;
+
+        margin-top: 0.625rem;
+        margin-left: 1.5rem;
+
+        border-radius: 0.3125rem;
+
+        background: #FFF;
+
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 500;
+
+            margin-left: 0.4375rem;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 1rem;
+                height: 1rem;
+
+                margin-left: 0.4375rem;
+                margin-right: 0.25rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .task {
+        .taskInfo {
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .task {
+        .taskInfo {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .task {
+        .taskInfo {
+            width: 70%;
+        }
+    }
+}

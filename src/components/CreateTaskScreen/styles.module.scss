@@ -1,0 +1,126 @@
+.createTaskScreen {
+    position: absolute;
+
+    z-index: 3;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+
+    .formDiv {
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 19.6875rem;
+        height: 18.375rem;
+
+        background: #FFF;
+
+        margin-top: calc(50vh - 9.84375rem);
+        margin-left: auto;
+        margin-right: auto;
+
+        border-radius: 0.625rem;
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 600;
+
+            height: min-content;
+
+            margin-top: 1.5625rem;
+            margin-left: 1.5625rem;
+        }
+
+        form {
+            margin-left: 1.5625rem;
+            margin-bottom: 1.5625rem;
+
+            label {
+                position: relative;
+                top: 0.5rem;
+                left: 0.5rem;
+
+                font-family: 'Roboto', sans-serif;
+                font-size: 0.75rem;
+                font-weight: 400;
+
+                color: rgba(0, 0, 0, 0.6);
+
+                background: #FFF;
+
+                padding-left: 0.25rem;
+                padding-right: 0.25rem;
+            }
+
+            input {
+                display: flex;
+                
+                width: 14.8125rem;
+                
+                border: 1px solid rgba(0, 0, 0, 0.38);
+                border-radius: 0.5rem;
+                
+                padding-left: 0.875rem;
+                padding-right: 0.875rem;
+
+                font-family: 'Roboto', sans-serif;
+                font-size: 1rem;
+                font-weight: 400;
+
+                color: rgba(0, 0, 0, 0.87);
+            }
+
+            .createName {
+                height: 3.5rem;
+            }
+
+            .createNameInvalid {
+                height: 3.5rem;
+
+                border: 1px solid rgba(200, 0, 0, 0.38);
+                &::placeholder{
+                    color: rgba(200, 0, 0, 0.7);
+                }
+            }
+
+            .nameError {
+                color: rgba(200, 0, 0, 0.6);
+            }
+
+            .createDescription {
+                height: 4.6875rem;
+
+                margin-bottom: 1rem;
+            }
+            
+            .buttons {
+                width: max-content;
+                margin-left: auto;
+
+                button {
+                    background: none;
+    
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 0.875rem;
+                    font-weight: 600;
+    
+                    color: #0047FF;
+    
+                    margin-left: 0.875rem;
+    
+                    transition: filter 0.2s;
+    
+                    &:hover {
+                        filter: brightness(1.5);
+
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
