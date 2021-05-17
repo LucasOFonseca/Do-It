@@ -6,6 +6,7 @@ import TaskProvider from './contexts/Task';
 //------------------------------ Components -------------------------------
 import CreateTaskScreen from './components/CreateTaskScreen';
 import EditTaskScreen from './components/EditTaskScreen';
+import EditUserScreen from './components/EditUserScreen';
 import Menu from './components/Menu';
 import About from './pages/About';
 import Tasks from './pages/Tasks';
@@ -21,6 +22,8 @@ function App() {
     <TaskProvider>
       <Router>
         <div className={ styles.wrapper }>
+          <EditUserScreen />
+
           <EditTaskScreen />
 
           <CreateTaskScreen />
