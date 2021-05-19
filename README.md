@@ -48,6 +48,9 @@ This project was devolved with the following technologies:
 
 - Make the search bar work well.
 
+  ## Fail
+  - I tried to add a feature where the user could edit his name and function and save using Local Storage, but I coldn't make it work, so I abandoned the idea.
+
 ## How to run
 
 In the project directory, run:

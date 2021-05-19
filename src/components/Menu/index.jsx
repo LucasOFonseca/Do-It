@@ -1,13 +1,13 @@
-//---------------------- Libraries ----------------------
+//-------------------------- Libraries --------------------------
 import { useContext, useEffect, useRef, useState } from 'react';
 import { useTransition, animated } from 'react-spring';
 import { TaskContext } from '../../contexts/Task';
 import { Link } from 'react-router-dom';
-//-------------------------------------------------------
+//---------------------------------------------------------------
 
-//------------------------ Styles -----------------------
+//--------------------------- Styles ----------------------------
 import styles from './styles.module.scss';
-//-------------------------------------------------------
+//---------------------------------------------------------------
 
 // Custom React Hook to get and use the current window width value
 function useWindowWidth() {

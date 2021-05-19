@@ -14,8 +14,8 @@ export default function CreateTaskScreen() {
     const {
         showCreate,
         toggleCreateTask,
-        setShow,
-        setShowContent
+        setShowContent,
+        setShow
     } = useContext(TaskContext)
 
     let formRef = useRef()
@@ -48,6 +48,7 @@ export default function CreateTaskScreen() {
          setData(newData) 
     }
     
+    // Submit data to API with post method
     function submit(e) {
         e.preventDefault()
 

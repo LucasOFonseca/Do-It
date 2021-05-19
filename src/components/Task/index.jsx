@@ -40,7 +40,7 @@ export default function Task({
         api.delete(`/${id}`)
     }
     
-    //--------------------- Animation section ---------------------
+    //----------------------- Animation section -----------------------
     const [create, setCreate] = useState(true)
     
     const transition = useTransition(create, {
@@ -54,7 +54,7 @@ export default function Task({
         enter: { x: 0, y: 0, opacity: 1, transform: 'scale(1)' },
         leave: { x: 40, y: -20, opacity: 0, transform: 'scale(0.4)' }
     })
-    //-------------------------------------------------------------
+    //-----------------------------------------------------------------
 
     return (
         <section>

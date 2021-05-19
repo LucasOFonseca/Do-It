@@ -15,11 +15,11 @@ import styles from '../styles/tasks.module.scss';
 export default function Tasks() {
     // Import the content of the task context to use here
     const { 
-        toggleCreateTask,
-        toggleSideMenu,
-        editTaskInfo,
         showContent,
-        setShowContent
+        editTaskInfo,
+        setShowContent,
+        toggleSideMenu,
+        toggleCreateTask
     } = useContext(TaskContext)
 
     //------------ Get tasks information section -----------
@@ -50,10 +50,12 @@ export default function Tasks() {
     return (
         <section className={ styles.tasksPage }>
             
+            {/* Create-task-button */}
             <button type="button" className={ styles.createTask} onClick={toggleCreateTask}>
                 <img src="/plus.svg" alt="adicionar tarefa" />
                 <p>Nova tarefa</p>
             </button>
+            {/* /Create-task-button */}
 
             {/* Tasks-section */}
             <div className={ styles.container }>
@@ -104,8 +106,7 @@ export default function Tasks() {
 
             </div>
             {/* /Tasks-section */}
-
-                
+   
         </section>        
     )
 }

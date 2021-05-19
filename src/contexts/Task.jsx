@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from 'react';
+import { createContext, useState } from 'react';
 
 export const TaskContext = createContext();
 
@@ -27,13 +27,6 @@ export default function TaskContextProvider({ children }) {
 
     // State to hide/show the task list
     const [showContent, setShowContent] = useState()
-
-    const [showEditUser, setShowEditUser] = useState(true)
-
-    // Function to hide/show the edit user info screen
-    function toggleEditUser() {
-        setShowEditUser(!showEditUser)
-    }
     //------------------------------------------------------------
     
     //-------------------- Edit task controls --------------------
@@ -75,36 +68,24 @@ export default function TaskContextProvider({ children }) {
     }
     //------------------------------------------------------------
 
-    const [user, setUser] = useState({
-        name: "",
-        function: ""
-    })
-
-    useEffect(() => {
-        localStorage.setItem("user", JSON.stringify(user))
-    }, [user])
-
     return (
         <TaskContext.Provider value={{ 
             data,
             showEdit,
             showCreate,
-            showSideMenu,
             showContent,
-            showEditUser,
+            showSideMenu,
             setData,
             setShow,
             setShowEdit,
-            setShowContent,
-            setShowEditUser,
             setShowSide,
+            setShowContent,
             setCompleted,
             setUncompleted, 
-            toggleCreateTask, 
             toggleEditTask,
-            editTaskInfo,
             toggleSideMenu,
-            toggleEditUser
+            toggleCreateTask, 
+            editTaskInfo,
         }}>
             {children}
         </TaskContext.Provider>

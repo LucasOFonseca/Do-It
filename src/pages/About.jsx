@@ -8,6 +8,7 @@ import styles from '../styles/about.module.scss';
 //-----------------------------------------------
 
 export default function About() {
+    // Import the content of the task context to use here
     const { toggleSideMenu } = useContext(TaskContext)
 
     return (
@@ -29,13 +30,13 @@ export default function About() {
                 <ul>
                     <li>
                         <h3>Adicionar tarefas</h3>
-                        <img className={ styles.taskExample } src="/create-task-exemple.png" alt="Na imagem, um formulário com o título criar tarefa na parte superior, seguido por um campo de texto denominado nomear tarefa preenxido com lavar louça e outro campo denominado descrição da tarefa preenchido com após o almoço, no canto inferior direito um botão para cancelar e outro para salvar." />
+                        <img className={ styles.taskExample } src="/create-task-exemple.png" alt="Na imagem, um formulário com o título criar tarefa na parte superior, seguido por um campo de texto denominado nomear tarefa preenchido com lavar louça e outro campo denominado descrição da tarefa preenchido com após o almoço, no canto inferior direito um botão para cancelar e outro para salvar." />
                         <p className={ styles.pMargin }>
                             Adicione tarefas clicando no botão&nbsp;
                             
-                            <img className={ styles.button } src="/create-task-button.png" alt="Na imagem, um botão rentangular com as bordas arredondadas na cor azul com a escrita branca, nele, um sinal de mais seguido de: nova tarefa." />
+                            <img className={ styles.button } src="/create-task-button.png" alt="Adicionar tarefa" />
                             
-                            <img className={ styles.mobileCreateBtn } src="/create-task-mobile-btn.png" alt="Na imagem, um botão redondo azul com um sinal de mais branco." />
+                            <img className={ styles.mobileCreateBtn } src="/create-task-mobile-btn.png" alt="Adicionar tarefa" />
                             
                             &nbsp;localizado no canto inferior direito da tela.
                         </p>
@@ -45,7 +46,7 @@ export default function About() {
                     </li>
                     <li>
                         <h3>Editar tarefas existentes</h3>
-                        <img className={ styles.taskExample } src="/edit-task-exemple.png" alt="Na imagem, um formulário com o título editar tarefa na parte superior, seguido por um campo de texto denominado nomear tarefa preenxido com lavar louça e outro campo denominado descrição da tarefa preenchido com após o jantar. Um campo em cinza claro com a opção em progresso desmarcada e a opção concluído marcada, no canto inferior direito um botão para cancelar e outro para salvar." />
+                        <img className={ styles.taskExample } src="/edit-task-exemple.png" alt="Na imagem, um formulário com o título editar tarefa na parte superior, seguido por um campo de texto denominado nomear tarefa preenchido com lavar louça e outro campo denominado descrição da tarefa preenchido com após o jantar. Um campo em cinza claro com a opção em progresso desmarcada e a opção concluído marcada, no canto inferior direito um botão para cancelar e outro para salvar." />
                         <p>
                             O modo de edição permite que você edite o título, descrição e estado da tarefa.
                         </p>
