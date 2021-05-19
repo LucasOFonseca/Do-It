@@ -62,7 +62,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## References
 
-- [project layout](https://www.figma.com/file/XJkX024TgPHlzfK0de4Yj1/Lista-de-Tarefas?node-id=23%3A52) (you need to have [Figma](https://www.figma.com) account to access it)
+- [Project layout](https://www.figma.com/file/XJkX024TgPHlzfK0de4Yj1/Lista-de-Tarefas?node-id=23%3A52) (you need to have [Figma](https://www.figma.com) account to access it)
 - [API consumed](https://chronos.compraqui.app/swagger/index.html)
 
 ---
