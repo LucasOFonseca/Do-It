@@ -1,9 +1,9 @@
 <h1 align="center">
-  <img alt="Do It" title="Do It" src=".github/app-logo.png" width="220px" />
+  <img alt="Do It" title="Do It" src="github/app-logo.png" width="220px" />
 </h1>
 
 <p align="center">
-  <img alt="Do It preview" src=".github/doIt-banner.png" width="100%">
+  <img alt="Do It preview" src="github/doIt-banner.png" width="100%">
 </p>
 
 ## About
@@ -21,7 +21,7 @@ Do It is a to-do list app where you can add tasks that you need remember later.
 
 ## Resposive layout
 <p align="center">
-  <img alt="Do It mobile" src=".github/doIt-mobile.png" width="25%">
+  <img alt="Do It mobile" src="github/doIt-mobile.png" width="25%">
 </p>
 
 This project is fully compatible with mobile devices of any size.
