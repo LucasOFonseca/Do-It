@@ -31,7 +31,7 @@ This project is fully compatible with mobile devices of any size.
 The "Add task" button has been moved from the end of the task list to the bottom right corner in floating format to facilitate the creation of new tasks when the user has a very large list of tasks.
 
 ## Technologies
-This project was devolved with the following technologies:
+This project was devoloped with the following technologies:
 
 - HTML
 - SCSS
